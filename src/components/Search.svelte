@@ -1,5 +1,7 @@
 <script>
-
+    function handleSubmit(e){
+        console.log(e)
+    }
 </script>
 
 <div class="search-container">
@@ -11,21 +13,22 @@
     </div>
     <div>
         <div>
-            <form on:submit={handleSubmit(this)}>
+            <form on:submit={(e)=>handleSubmit(e)}>
                 <div>
                     <aside><i class="fas fa-map-marker-alt"></i></aside>
                     <input type="text" placeholder="Partindo de">
-                    <aside><i class="fas fa-angle-down"></i></aside>
                 </div>
                 <div>
                     <aside><i class="fas fa-plane"></i></aside>
-                    <input type="text" placeholder="Destino">
-                    <aside><i class="fas fa-angle-down"></i></aside>
+                    <select name="destination" id="destination">
+                        <option value="international">Internacional</option>
+                        <option value="national">Nacional</option>
+                        <option value="both">Nacional & Internacional</option>
+                    </select>
                 </div>
                 <div>
                     <aside><i class="fas fa-users"></i></aside>
-                    <input type="number" max="6" placeholder="Quantidade de passageiros">
-                    <aside></aside>
+                    <input type="number" min="0" max="6" placeholder="Quantidade de passageiros">
                 </div>
                 <button type="submit">Buscar</button>
             </form>
@@ -39,6 +42,7 @@
         background-image: url('/Image.png');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: 50%;
         width: 100%;
         height: 100%;
         display: flex;
@@ -103,9 +107,16 @@
         color: var(--main-color);
     }
 
+    .search-container > div:last-of-type > div form div select{
+        height: 3rem;
+        width: 18rem;
+        outline: none;
+        background-color: var(--white);
+
+    }
     .search-container > div:last-of-type > div form div input{
         height: 3rem;
-        width: 15rem;
+        width: 18rem;
         outline: none;
     }
 

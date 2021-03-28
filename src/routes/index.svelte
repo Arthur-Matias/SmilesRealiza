@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Smiles Realiza | Home</title>
+	<title>Home | Smiles Realiza </title>
 </svelte:head>
 
 <div class="home-container">
@@ -23,7 +23,7 @@
 	.home-container{
 		height: 100%;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}

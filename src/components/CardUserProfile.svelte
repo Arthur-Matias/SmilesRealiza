@@ -1,63 +1,48 @@
 <script>
-import PackageModal from "./PackageModal.svelte";
 import {scheduledTrips} from '../stores.js'
-import {goto} from '@sapper/app'
+import UserTripModal from './UserTripModal.svelte'
 
-    export let cardProps;
-    let {
-        title,
-        destination,
-        packageItems,
-        prices,
-        usersReservations,
-        pictures
-        } = cardProps;
+export let isOpen = false;
+export let props;
 
-        let currentPicture = pictures[0];
+$: modalOpen = isOpen;
 
-    let isOpen = false;
+console.log($scheduledTrips)
+function handleCardAccessClick(){
+    setIsOpen(true)
+}
 
-    function openModal(){
-        isOpen = true;
-    }
+function setIsOpen(state){
+    modalOpen = state
+}
 
-    function handleReservationClick(){
-        $scheduledTrips = [...$scheduledTrips, cardProps]
-        console.log($scheduledTrips)
-        goto('user_page')
-    }
 </script>
 
-<PackageModal 
-    bind:isOpen={isOpen}
-    bind:photo={currentPicture}
-    bind:destination={destination}
-    bind:prices={prices}
-    bind:usersReservations={usersReservations}
-    bind:packageItems={packageItems}
-    bind:cardProps={cardProps}
+<UserTripModal 
+    bind:isOpen={modalOpen}
+    bind:photo={props.pictures[0]}
+    bind:prices={props.prices}
+    bind:destination={props.destination}
 />
-<div on:click={openModal} class="package-card" style="background-image: url({currentPicture});">
+<div on:click={()=>setIsOpen(true)} class="package-card" style="background-image: url({props.pictures[0]});">
     <div class="wrapper">
         <div class="icon">
             <i class="fas fa-suitcase-rolling"></i>
         </div>
         <div class="card-content">
-            <h2>{title}</h2>
-            <p>Saindo de: {destination.departure}</p>
-            <button on:click="{handleReservationClick}">Reserve Já</button>
-
+            <h2>{props.title}</h2>
+            <p>Saindo de: {props.destination.departure}</p>
+            
             <div class="prices">
                 <section>
-                    <p>A partir de:</p>
-                    <h2>{prices.basePrice}</h2>
+                    <p>Valor total:</p>
+                    <h2>{props.prices.clubSmilesPrice}</h2>
                 </section>
-
+                
                 <div class="trace"></div>
                 
                 <section>
-                    <p>Clube Smiles:</p>
-                    <h2>{prices.clubSmilesPrice}</h2>
+                    <button on:click="{handleCardAccessClick}">Acessar</button>
                 </section>
             </div>
         </div>

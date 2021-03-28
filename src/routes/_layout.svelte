@@ -39,6 +39,7 @@
 		overflow-x: hidden;
 		display: flex;
 		flex-direction: column;
+		position: relative;
 		
 	}
 	.container main{

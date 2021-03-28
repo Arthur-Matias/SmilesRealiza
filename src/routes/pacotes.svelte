@@ -15,7 +15,8 @@ import Card from "../components/Card.svelte"
             title: 'rio de janeiro (GIG)',
             
             destination: {
-                departure: 'curitiba (CWB)'
+                departure: 'curitiba (CWB)',
+                arrival: 'rio de janeiro (GIG)'
             },
             
             packageItems:[
@@ -30,7 +31,39 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 2',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 3',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 4',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 5',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 6',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
@@ -55,7 +88,23 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                'user 1',
+                'user 2',
+                'user 3',
+                'user 4',
+                'user 5',
+                'user 6',
+                'user 7',
+                'user 8',
+                'user 9',
+                'user 10',
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
@@ -80,7 +129,23 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                'user 1',
+                'user 2',
+                'user 3',
+                'user 4',
+                'user 5',
+                'user 6',
+                'user 7',
+                'user 8',
+                'user 9',
+                'user 10',
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
@@ -105,7 +170,23 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                'user 1',
+                'user 2',
+                'user 3',
+                'user 4',
+                'user 5',
+                'user 6',
+                'user 7',
+                'user 8',
+                'user 9',
+                'user 10',
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
@@ -130,7 +211,23 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                'user 1',
+                'user 2',
+                'user 3',
+                'user 4',
+                'user 5',
+                'user 6',
+                'user 7',
+                'user 8',
+                'user 9',
+                'user 10',
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
@@ -155,7 +252,23 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                'user 1',
+                'user 2',
+                'user 3',
+                'user 4',
+                'user 5',
+                'user 6',
+                'user 7',
+                'user 8',
+                'user 9',
+                'user 10',
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
@@ -180,7 +293,23 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                'user 1',
+                'user 2',
+                'user 3',
+                'user 4',
+                'user 5',
+                'user 6',
+                'user 7',
+                'user 8',
+                'user 9',
+                'user 10',
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
@@ -205,15 +334,31 @@ import Card from "../components/Card.svelte"
                 clubSmilesPrice: '590,68',
             },
 
-            usersReservations:'',
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                'user 1',
+                'user 2',
+                'user 3',
+                'user 4',
+                'user 5',
+                'user 6',
+                'user 7',
+                'user 8',
+                'user 9',
+                'user 10',
+            ],
             pictures: [
                 'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
 
             ],
         },
     ]
-
-    let activeItem = 'todos';
+    
+    export let activeItem = 'todos';
 
     function setActiveItem(item){
         activeItem = item;
@@ -225,6 +370,9 @@ import Card from "../components/Card.svelte"
 
 </script>
 
+<svelte:head>
+	<title>Pacotes | Smiles_Realiza </title>
+</svelte:head>
 <div class="packages-list-container">
     <header>
         <aside>
