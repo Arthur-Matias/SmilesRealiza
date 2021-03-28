@@ -213,8 +213,14 @@ import Card from "../components/Card.svelte"
         },
     ]
 
+    let activeItem = 'todos';
+
+    function setActiveItem(item){
+        activeItem = item;
+    }
+
     function handleClick(e, value){
-        console.log(value)
+        setActiveItem(value)
     }
 
 </script>
@@ -230,7 +236,10 @@ import Card from "../components/Card.svelte"
     </header>
     <div class="filters">
         {#each filters as filter}
-            <div on:click={e=>handleClick(e, filter)} class="filter-item {filter === 'todos'?'active':''}">
+            <div 
+                on:click={e=>handleClick(e, filter)} 
+                class="filter-item {filter === activeItem?'active':''}"
+            >
                 <p>{filter}</p>
             </div>
         {/each}

@@ -59,6 +59,9 @@
     .package-card:hover{
         transform: scale(1.15);
     }
+    .package-card:hover .icon{
+        color: var(--main-color);
+    }
 
     .icon{
         position: absolute;
@@ -79,6 +82,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-end;
+        margin-top: .8rem;
     }
 
     .card-content button{

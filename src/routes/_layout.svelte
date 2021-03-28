@@ -35,7 +35,8 @@
 		height: 100vh;
 		width: 100vw;
 		padding: 0;
-		overflow: hidden;
+		overflow-y: auto;
+		overflow-x: hidden;
 		display: flex;
 		flex-direction: column;
 		
