@@ -39,11 +39,12 @@
 		font-weight: 400;
 		width: 100%;
 		background-color: var(--main-color);
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
 
 	ul {
 		margin: 0;
-		padding: 0 2rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -57,7 +58,9 @@
 
 	a {
 		text-decoration: none;
-		padding: 1rem .5rem;
+		margin-left: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 		display: block;
 		color: var(--white);
 		text-transform: capitalize;

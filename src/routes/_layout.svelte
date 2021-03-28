@@ -38,10 +38,13 @@
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
+		
 	}
 	.container main{
 		background-color: var(--beige);
 		height: 100%;
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
 	main > div{
 		height: 100%;

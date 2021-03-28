@@ -28,8 +28,9 @@
 		justify-content: center;
 	}
 	.content{
-		width: 80%;
-		height: 100%;
+		width: 100%;
+		height: 60%;
+		margin-bottom: 5rem;
 	}
 	footer h1{
 		height: 60%;

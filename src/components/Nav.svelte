@@ -18,6 +18,8 @@
         background-color: var(--beige);
         color: var(--soft-gray);
         text-transform: capitalize;
+        padding-right: 2rem;
+		padding-left: 2rem;
     }
 
     .nav-container ul{
