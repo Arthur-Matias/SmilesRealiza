@@ -16,10 +16,10 @@
         <p>Aqui estão seus pacotes:</p>
         <div class="cards">
             {#each $scheduledTrips as trip }
-            <div class="profile-card-wrapper">
-                <CardUserProfile bind:props={trip} />
-            </div>
-        {/each}
+                <div class="profile-card-wrapper">
+                    <CardUserProfile bind:props={trip} />
+                </div>
+            {/each}
         </div>
     </div>
 </div>

@@ -1,5 +1,89 @@
 <script>
 import Card from "../components/Card.svelte"
+import axios from 'axios';
+
+
+    const api = axios.create({
+        baseURL : 'http://localhost:5000'
+    })
+
+    $ : data_to_change = [];
+
+    function handle_data_to_change(e){
+        data_to_change = [...data_to_change,{
+            title: e.para,
+            
+            destination: {
+                departure: e.de,
+                arrival: e.de
+            },
+            
+            packageItems:[
+                'Lorem impsum sit dolor amet...',
+                'Lorem impsum sit dolor amet...',
+                'Lorem impsum sit dolor amet...',
+                'Lorem impsum sit dolor amet...',
+            ],
+            
+            prices:{
+                basePrice: e['preço em real'],
+                clubSmilesPrice: e['preço em milhas'],
+            },
+
+            usersReservations:[
+                {
+                    name: 'user 1',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 2',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 3',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 4',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 5',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                {
+                    name: 'user 6',
+                    pic:'',
+                    percentageCompleted: 50,
+                },
+                
+            ],
+            pictures: [
+                'https://images.unsplash.com/photo-1583275479278-7bc72a16c2ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80',
+
+            ],
+        }]
+
+
+
+    }
+
+    api.get('/get_all_packages').then((e) => {
+        const data = e.data
+        console.log("DIOS");
+        data.map(i => {
+            handle_data_to_change(i)
+        })
+        console.log(JSON.stringify(data_to_change));
+
+    }).catch(e => {
+        console.log(e);
+    })
 
     const filters = [
         'todos',
@@ -367,6 +451,8 @@ import Card from "../components/Card.svelte"
     function handleClick(e, value){
         setActiveItem(value)
     }
+    console.log("FINAL");
+    console.log(data_to_change);
 
 </script>
 
@@ -393,8 +479,9 @@ import Card from "../components/Card.svelte"
         {/each}
     </div>
     <div class="content">
-        {#each props as cardProps}
+        {#each data_to_change as cardProps}
             <Card bind:cardProps={cardProps} />
+            
         {/each}
     </div>
 </div>

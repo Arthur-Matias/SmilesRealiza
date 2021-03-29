@@ -38,25 +38,25 @@
             <div>
                 <p>Valor total</p>
                 <div>
-                    <p>R$: <b>5.800,68</b></p>
+                    <p>R$: <b>{prices.basePrice}</b></p>
                 </div>
             </div>
             <div>
                 <p>Valor pago</p>
                 <div>
-                    <p>R$: <b>3500,00</b></p>
+                    <p>R$: <b>00,00</b></p>
                 </div>
             </div>
             <div>
                 <p>Valor das parcelas</p>
                 <div>
-                    <p>R$: <b>500,00</b></p>
+                    <p>R$: <b>{parseFloat(prices.basePrice) / 12}</b></p>
                 </div>
             </div>
             <div>
                 <p>Parcelas restantes</p>
                 <div>
-                    <p><b>5</b></p>
+                    <p><b>12</b></p>
                 </div>
             </div>
         </div>

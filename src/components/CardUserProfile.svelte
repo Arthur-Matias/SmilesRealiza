@@ -13,6 +13,8 @@ function handleCardAccessClick(){
 }
 
 function setIsOpen(state){
+    console.log("ACESSANDO O TRIP");
+    console.log(props);
     modalOpen = state
 }
 
