@@ -4,3 +4,7 @@ image:
 tasks:
   - init: npm install && npm run build
     command: npm run start
+
+vscode:
+  extensions:
+    - svelte.svelte-vscode@104.8.0:82wQ4G6veIE3KBUYHpHgmw==

@@ -16,3 +16,5 @@ app.use(sapper.middleware());
 app.listen(PORT, (err) => {
 if(err) console.log(err)
 })
+
+export default app;
